@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <title>Word Counter</title>
+    <style>
+        body {
+            background-color: rgba(82, 122, 255, 0.61);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+        }
+        
+        main {
+            margin:auto;
+            margin-top: 150px;
+            text-align: center;
+        }
+
+        main a {
+            text-decoration: none;
+            color: yellow;
+            font-size: 20px;
+        }
+
+        span.result {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>The amount of words is <span class="result">{{words}}</span></h1>
+        <h1>The amount of letters is <span class="result">{{letters}}</span></h1>
+        <h1>The amount of spaces is <span class="result">{{spaces}}</span></h1>
+        <h1>The amount of special characteres is <span class="result">{{specials}}</span></h1>
+        <a href="/">Click here to back</a>
+    </main>
+</body>
+</html>
