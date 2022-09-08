@@ -31,7 +31,7 @@ def index(request):
     return render(request, 'index.html')
 
 def counter(request):
-    text = request.GET['text']
+    text = request.POST['text']
     counter_words = count_words(text)
     counter_letters = count_letters(text)
     counter_spaces = count_spaces(text)
